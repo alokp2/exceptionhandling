@@ -25,7 +25,7 @@ The else part of try-except-else is executed when no exception happens.
 '''
 
 '''When is the finally block executed?
-Finally block is always executed. 
+Finally block is always executed after try/except.
 
 '''
 
