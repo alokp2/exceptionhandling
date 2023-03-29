@@ -53,15 +53,19 @@ It gives a false.
 '''
 '''Write python program that user to enter only odd numbers, 
 else will raise an exception.'''
+class EvenException(Exception):
+ pass
 
 try:
     #accept odd numbers from user
     num1= int(input("Enter only odd numbers:"))
-    ans=num1%2!=0
-    print(ans)
+    if num1%2!=0:
+    print("Odd Number")
+    else:
+     raise EvenException
     
     
-except:
-    print("Invalid input")
+except EvenException:
+    print("User input is even number")
     
     
